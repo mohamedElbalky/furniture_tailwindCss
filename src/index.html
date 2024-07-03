@@ -8,7 +8,7 @@
     <script type="module" src="./main.js"></script>
   </head>
   <body>
-    <nav class="bg-zinc-800 py-4 px-7 shadow-lg sticky top-0">
+    <nav class="bg-zinc-800 py-4 px-7 shadow-lg sticky top-0 z-30">
       <div class="container flex justify-between items-center mx-auto">
         <div>
           <a href="">
@@ -131,14 +131,14 @@
     <!-- end hero section -->
 
     <!-- start about -->
-    <section class="container mx-auto mt-20">
+    <section class="container mx-auto px-4 mt-20">
       <div
-        class="flex flex-col md:flex-row gap-8 items-center justify-center px-8 md:p-0"
+        class="flex flex-col md:flex-row gap-8 items-center justify-center  md:p-0"
       >
         <div class="md:w-2/3 border border-dashed border-black p-4">
           <img src="images/about.jpeg" alt="about" />
         </div>
-        <div class="md:w-1/2 md:ml-4 text-slate-700">
+        <div class="md:w-1/2 md:ml-4 text-slate-700 px-4">
           <p class="mb-4">What we do</p>
           <h2 class="text-4xl font-bold mb-4">About Us</h2>
           <p class="mb-4 leading-8 text-justify">
@@ -159,27 +159,94 @@
     <!-- end about -->
 
     <!-- start shop -->
-    <section class="container mx-auto mt-20 px-4 py-12">
-      <div class="">
-        <div class="shadow-lg rounded-lg">
-          <div class="">
-            <img src="images/1.jpeg" alt="" />
-          </div>
-          <div class="">
-            <h2>Sofa Sets</h2>
-            <p>
+    <section class="container mx-auto mt-10 px-4 py-12">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-80 object-cover hover:scale-[1.1] transition duration-300" src="images/1.jpeg" alt="" />
+          <div class="p-7">
+            <h2 class="text-lg font-bold mb-2">Sofa Sets</h2>
+            <p class="mb-4 text-justify text-slate-700">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At ab
               similique eum voluptate sapiente aperiam, quae necessitatibus quo
               neque aspernatur laudantium nihil? Molestias distinctio voluptates
               tenetur, consequatur facere deserunt assumenda!
             </p>
-            <del>$2000</del>
-            <span>$1500</span>
+            <del class="text-sm text-slate-400 mr-2">$2000</del>
+            <span class="text-xl font-bold">$1500</span>
+          </div>
+        </div>
+        <div class="shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-80 object-cover hover:scale-[1.1] transition duration-300" src="images/2.jpeg" alt="" />
+          <div class="p-7">
+            <h2 class="text-lg font-bold mb-2">Sofa Sets</h2>
+            <p class="mb-4 text-justify text-slate-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At ab
+              similique eum voluptate sapiente aperiam, quae necessitatibus quo
+              neque aspernatur laudantium nihil? Molestias distinctio voluptates
+              tenetur, consequatur facere deserunt assumenda!
+            </p>
+            <del class="text-sm text-slate-400 mr-2">$2000</del>
+            <span class="text-xl font-bold">$1500</span>
+          </div>
+        </div>
+        <div class="shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-80 object-cover hover:scale-[1.1] transition duration-300" src="images/3.jpeg" alt="" />
+          <div class="p-7">
+            <h2 class="text-lg font-bold mb-2">Sofa Sets</h2>
+            <p class="mb-4 text-justify text-slate-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At ab
+              similique eum voluptate sapiente aperiam, quae necessitatibus quo
+              neque aspernatur laudantium nihil? Molestias distinctio voluptates
+              tenetur, consequatur facere deserunt assumenda!
+            </p>
+            <del class="text-sm text-slate-400 mr-2">$2000</del>
+            <span class="text-xl font-bold">$1500</span>
+          </div>
+        </div>
+        <div class="shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-80 object-cover hover:scale-[1.1] transition duration-300" src="images/4.jpeg" alt="" />
+          <div class="p-7">
+            <h2 class="text-lg font-bold mb-2">Sofa Sets</h2>
+            <p class="mb-4 text-justify text-slate-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At ab
+              similique eum voluptate sapiente aperiam, quae necessitatibus quo
+              neque aspernatur laudantium nihil? Molestias distinctio voluptates
+              tenetur, consequatur facere deserunt assumenda!
+            </p>
+            <del class="text-sm text-slate-400 mr-2">$2000</del>
+            <span class="text-xl font-bold">$1500</span>
+          </div>
+        </div>
+        <div class="shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-80 object-cover hover:scale-[1.1] transition duration-300" src="images/5.jpeg" alt="" />
+          <div class="p-7">
+            <h2 class="text-lg font-bold mb-2">Sofa Sets</h2>
+            <p class="mb-4 text-justify text-slate-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At ab
+              similique eum voluptate sapiente aperiam, quae necessitatibus quo
+              neque aspernatur laudantium nihil? Molestias distinctio voluptates
+              tenetur, consequatur facere deserunt assumenda!
+            </p>
+            <del class="text-sm text-slate-400 mr-2">$2000</del>
+            <span class="text-xl font-bold">$1500</span>
+          </div>
+        </div>
+        <div class="shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-80 object-cover hover:scale-[1.1] transition duration-300" src="images/6.jpeg" alt="" />
+          <div class="p-7">
+            <h2 class="text-lg font-bold mb-2">Sofa Sets</h2>
+            <p class="mb-4 text-justify text-slate-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At ab
+              similique eum voluptate sapiente aperiam, quae necessitatibus quo
+              neque aspernatur laudantium nihil? Molestias distinctio voluptates
+              tenetur, consequatur facere deserunt assumenda!
+            </p>
+            <del class="text-sm text-slate-400 mr-2">$2000</del>
+            <span class="text-xl font-bold">$1500</span>
           </div>
         </div>
       </div>
     </section>
-
     <!-- end shop -->
 
     <br />
