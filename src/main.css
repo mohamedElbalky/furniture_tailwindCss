@@ -6,6 +6,16 @@
   .btn {
     @apply bg-yellow-500 hover:bg-yellow-400 transition duration-300 text-black font-bold py-2 px-6;
   }
+  .footer_link {
+    @apply hover:text-white;
+  }
+  .footer_col {
+    @apply flex flex-col items-center md:items-start gap-1;
+  }
+
+  .dark_navbar {
+    @apply dark:bg-white dark:text-black
+  }
 }
 
 @layer utilities {

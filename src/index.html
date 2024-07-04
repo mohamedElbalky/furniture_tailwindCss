@@ -7,23 +7,24 @@
 
     <script type="module" src="./main.js"></script>
   </head>
-  <body class="bg-slate-100">
-    <nav class="bg-zinc-800 py-4 px-7 shadow-lg sticky top-0 z-30">
+  <body class="bg-slate-100 dark:bg-slate-900">
+    <nav class="bg-zinc-800 dark:bg-white dark:text-black py-4 px-7 shadow-lg sticky top-0 z-30">
       <div class="container flex justify-between items-center mx-auto">
         <div>
           <a href="">
-            <img src="images/logo_1.svg" alt="logo" class="w-40" />
+            <img src="images/logo_light.svg" alt="logo" class="w-40" />
+            <!-- <img src="images/logo_dark.svg" alt="logo" class="w-40 hidden dark:block" /> -->
           </a>
         </div>
-        <div class="hidden md:flex space-x-6 text-gray-300 font-bold">
-          <a href="#" class="hover:text-white">Home</a>
-          <a href="#" class="hover:text-white">About</a>
-          <a href="#" class="hover:text-white">Shop</a>
-          <a href="#" class="hover:text-white">Testimony</a>
-          <a href="#" class="hover:text-white">Contact</a>
-          <a href="#" class="hover:text-white">New version</a>
+        <div class="hidden md:flex space-x-6 text-gray-300 dark:text-slate-900 font-bold">
+          <a href="#" class="hover:text-white dark:hover:text-slate-700">Home</a>
+          <a href="#" class="hover:text-white dark:hover:text-slate-700">About</a>
+          <a href="#" class="hover:text-white dark:hover:text-slate-700">Shop</a>
+          <a href="#" class="hover:text-white dark:hover:text-slate-700">Testimony</a>
+          <a href="#" class="hover:text-white dark:hover:text-slate-700">Contact</a>
+          <a href="#" class="hover:text-white dark:hover:text-slate-700">New version</a>
           <!-- sun icon -->
-          <button>
+          <button id="theme_toggle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -41,7 +42,7 @@
           </button>
         </div>
         <!-- hambergar icon -->
-        <div id="menu_btn" class="md:hidden text-gray-300 font-bold">
+        <div id="menu_btn" class="md:hidden text-gray-300 dark:text-slate-900 font-bold">
           <button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +61,7 @@
           </button>
         </div>
         <!-- x icon -->
-        <div id="x_btn" class="hidden text-gray-300 font-bold">
+        <div id="x_btn" class="hidden text-gray-300 dark:text-slate-900 font-bold">
           <button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -79,15 +80,15 @@
           </button>
         </div>
       </div>
-      <div id="menu_content" class="text-center text-gray-300 font-bold hidden">
-        <a class="block p-2 hover:text-white" href="#">Home</a>
-        <a class="block p-2 hover:text-white" href="#">About</a>
-        <a class="block p-2 hover:text-white" href="#">Shop</a>
-        <a class="block p-2 hover:text-white" href="#">Testimony</a>
-        <a class="block p-2 hover:text-white" href="#">Contact</a>
-        <a class="block p-2 hover:text-white" href="#">New version</a>
+      <div id="menu_content" class="text-center text-gray-300 dark:text-slate-900 font-bold hidden">
+        <a class="block p-2 hover:text-white dark:hover:text-slate-700" href="#">Home</a>
+        <a class="block p-2 hover:text-white dark:hover:text-slate-700" href="#">About</a>
+        <a class="block p-2 hover:text-white dark:hover:text-slate-700" href="#">Shop</a>
+        <a class="block p-2 hover:text-white dark:hover:text-slate-700" href="#">Testimony</a>
+        <a class="block p-2 hover:text-white dark:hover:text-slate-700" href="#">Contact</a>
+        <a class="block p-2 hover:text-white dark:hover:text-slate-700" href="#">New version</a>
         <!-- sun icon -->
-        <button class="p-2 hover:text-white">
+        <button id="theme_toggle" class="p-2 hover:text-white dark:text-slate-900 dark:hover:text-slate-700">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -108,9 +109,9 @@
 
     <!-- start hero section -->
     <section
-      class="h-screen flex items-center justify-center overlay_light bg-cover bg-center bg-fixed bg-no-repeat"
+      class="h-screen flex items-center justify-center overlay_light dark:overlay_dark bg-cover bg-center bg-fixed bg-no-repeat"
     >
-      <div class="md:w-1/2 text-center p-8 text-white">
+      <div class="md:w-1/2 text-center p-8 text-white ">
         <h1 class="text-4xl lg:text-6xl font-bold mb-4">
           Lorem ipsum dolor sit amet consectetur.
         </h1>
@@ -135,10 +136,10 @@
       <div
         class="flex flex-col md:flex-row gap-8 items-center justify-center md:p-0"
       >
-        <div class="md:w-2/3 border border-dashed border-black p-2">
+        <div class="md:w-2/3 border border-dashed border-black dark:border-slate-200 p-2">
           <img src="images/about.jpeg" alt="about" />
         </div>
-        <div class="md:w-1/2 md:ml-4 text-slate-700 px-4">
+        <div class="md:w-1/2 md:ml-4 text-slate-700 dark:text-slate-200 px-4">
           <p class="mb-4">What we do</p>
           <h2 class="text-4xl font-bold mb-4">About Us</h2>
           <p class="mb-4 leading-8">
@@ -161,7 +162,7 @@
     <!-- start shop -->
     <section class="container mx-auto mt-10 px-4 py-12">
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="shadow-lg rounded-lg overflow-hidden bg-white">
+        <div class="shadow-lg dark:shadow-slate-50/30 dark:shadow-md rounded-lg overflow-hidden bg-white dark:bg-slate-700 dark:text-slate-200">
           <img
             class="w-full h-80 object-cover hover:scale-[1.1] transition duration-300"
             src="images/1.jpeg"
@@ -169,7 +170,7 @@
           />
           <div class="p-7">
             <h2 class="text-lg font-bold mb-2">Sofa Sets</h2>
-            <p class="mb-4 text-slate-700">
+            <p class="mb-4 text-slate-700 dark:text-slate-200">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At ab
               similique eum voluptate sapiente aperiam, quae necessitatibus quo
               neque aspernatur laudantium nihil? Molestias distinctio voluptates
@@ -179,7 +180,7 @@
             <span class="text-xl font-bold">$1500</span>
           </div>
         </div>
-        <div class="shadow-lg rounded-lg overflow-hidden bg-white">
+        <div class="shadow-lg dark:shadow-slate-50/30 dark:shadow-md rounded-lg overflow-hidden bg-white dark:bg-slate-700 dark:text-slate-200">
           <img
             class="w-full h-80 object-cover hover:scale-[1.1] transition duration-300"
             src="images/2.jpeg"
@@ -187,7 +188,7 @@
           />
           <div class="p-7">
             <h2 class="text-lg font-bold mb-2">Sofa Sets</h2>
-            <p class="mb-4 text-slate-700">
+            <p class="mb-4 text-slate-700 dark:text-slate-200">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At ab
               similique eum voluptate sapiente aperiam, quae necessitatibus quo
               neque aspernatur laudantium nihil? Molestias distinctio voluptates
@@ -197,7 +198,7 @@
             <span class="text-xl font-bold">$1500</span>
           </div>
         </div>
-        <div class="shadow-lg rounded-lg overflow-hidden bg-white">
+        <div class="shadow-lg dark:shadow-slate-50/30 dark:shadow-md rounded-lg overflow-hidden bg-white dark:bg-slate-700 dark:text-slate-200">
           <img
             class="w-full h-80 object-cover hover:scale-[1.1] transition duration-300"
             src="images/3.jpeg"
@@ -205,7 +206,7 @@
           />
           <div class="p-7">
             <h2 class="text-lg font-bold mb-2">Sofa Sets</h2>
-            <p class="mb-4 text-slate-700">
+            <p class="mb-4 text-slate-700 dark:text-slate-200">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At ab
               similique eum voluptate sapiente aperiam, quae necessitatibus quo
               neque aspernatur laudantium nihil? Molestias distinctio voluptates
@@ -215,7 +216,7 @@
             <span class="text-xl font-bold">$1500</span>
           </div>
         </div>
-        <div class="shadow-lg rounded-lg overflow-hidden bg-white">
+        <div class="shadow-lg dark:shadow-slate-50/30 dark:shadow-md rounded-lg overflow-hidden bg-white dark:bg-slate-700 dark:text-slate-200">
           <img
             class="w-full h-80 object-cover hover:scale-[1.1] transition duration-300"
             src="images/4.jpeg"
@@ -223,7 +224,7 @@
           />
           <div class="p-7">
             <h2 class="text-lg font-bold mb-2">Sofa Sets</h2>
-            <p class="mb-4 text-slate-700">
+            <p class="mb-4 text-slate-700 dark:text-slate-200">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At ab
               similique eum voluptate sapiente aperiam, quae necessitatibus quo
               neque aspernatur laudantium nihil? Molestias distinctio voluptates
@@ -233,7 +234,7 @@
             <span class="text-xl font-bold">$1500</span>
           </div>
         </div>
-        <div class="shadow-lg rounded-lg overflow-hidden bg-white">
+        <div class="shadow-lg dark:shadow-slate-50/30 dark:shadow-md rounded-lg overflow-hidden bg-white dark:bg-slate-700 dark:text-slate-200">
           <img
             class="w-full h-80 object-cover hover:scale-[1.1] transition duration-300"
             src="images/5.jpeg"
@@ -241,7 +242,7 @@
           />
           <div class="p-7">
             <h2 class="text-lg font-bold mb-2">Sofa Sets</h2>
-            <p class="mb-4 text-slate-700">
+            <p class="mb-4 text-slate-700 dark:text-slate-200">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At ab
               similique eum voluptate sapiente aperiam, quae necessitatibus quo
               neque aspernatur laudantium nihil? Molestias distinctio voluptates
@@ -251,7 +252,7 @@
             <span class="text-xl font-bold">$1500</span>
           </div>
         </div>
-        <div class="shadow-lg rounded-lg overflow-hidden bg-white">
+        <div class="shadow-lg dark:shadow-slate-50/30 dark:shadow-md rounded-lg overflow-hidden bg-white dark:bg-slate-700 dark:text-slate-200">
           <img
             class="w-full h-80 object-cover hover:scale-[1.1] transition duration-300"
             src="images/6.jpeg"
@@ -259,7 +260,7 @@
           />
           <div class="p-7">
             <h2 class="text-lg font-bold mb-2">Sofa Sets</h2>
-            <p class="mb-4 text-slate-700">
+            <p class="mb-4 text-slate-700 dark:text-slate-200">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At ab
               similique eum voluptate sapiente aperiam, quae necessitatibus quo
               neque aspernatur laudantium nihil? Molestias distinctio voluptates
@@ -285,11 +286,12 @@
             </h2>
             <form action="" class="flex flex-col sm:flex-row gap-2 sm:gap-0">
               <input
-                class="w-full px-4 py-2"
+                class="w-full px-4 py-2 dark:bg-slate-900 dark:text-slate-200 focus:outline-none"
                 placeholder="Email"
                 type="email"
                 name=""
                 id=""
+                
               />
               <button class="btn">Subscribe</button>
             </form>
@@ -313,16 +315,18 @@
     <!-- end news letter -->
 
     <!-- start testimony -->
-    <section class="py-12  px-4 mt-10 ">
-      <h2 class="text-center text-3xl font-bold mb-7">Testimony</h2>
-      <div class="container mx-auto w-full flex flex-col md:flex-row gap-4 items-center justify-center">
+    <section class="py-12 px-4 mt-10">
+      <h2 class="text-center text-3xl font-bold mb-7 dark:text-slate-200">Testimony</h2>
+      <div
+        class="container mx-auto w-full flex flex-col md:flex-row gap-4 items-center justify-center"
+      >
         <div
-          class="flex flex-col items-center gap-4 text-center bg-white shadow-lg p-4 rounded-lg"
+          class="flex flex-col items-center gap-4 text-center bg-white dark:bg-slate-700 dark:text-slate-200 shadow-lg p-4 rounded-lg"
         >
           <div class="rounded-full overflow-hidden w-24">
             <img class="" src="images/avatar_2.png" alt="avatar" />
           </div>
-          <p class="text-md text-slate-700">
+          <p class="text-md text-slate-700 dark:text-slate-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
             cupiditate dolore optio in consequuntur maxime? Aut esse totam eius
             nisi laudantium aperiam
@@ -330,12 +334,12 @@
           <h3 class="text-xl font-bold">- Mohamed</h3>
         </div>
         <div
-          class="flex flex-col items-center gap-4 text-center bg-white shadow-lg p-4 rounded-lg"
+          class="flex flex-col items-center gap-4 text-center bg-white dark:bg-slate-700 dark:text-slate-200 shadow-lg p-4 rounded-lg"
         >
           <div class="rounded-full overflow-hidden w-24">
             <img class="" src="images/avatar_2.png" alt="avatar" />
           </div>
-          <p class="text-md text-slate-700">
+          <p class="text-md text-slate-700 dark:text-slate-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
             cupiditate dolore optio in consequuntur maxime? Aut esse totam eius
             nisi laudantium aperiam
@@ -343,12 +347,12 @@
           <h3 class="text-xl font-bold">- Mohamed</h3>
         </div>
         <div
-          class="flex flex-col items-center gap-4 text-center bg-white shadow-lg p-4 rounded-lg"
+          class="flex flex-col items-center gap-4 text-center bg-white dark:bg-slate-700 dark:text-slate-200 shadow-lg p-4 rounded-lg"
         >
           <div class="rounded-full overflow-hidden w-24">
             <img class="" src="images/avatar_2.png" alt="avatar" />
           </div>
-          <p class="text-md text-slate-700">
+          <p class="text-md text-slate-700 dark:text-slate-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
             cupiditate dolore optio in consequuntur maxime? Aut esse totam eius
             nisi laudantium aperiam
@@ -361,14 +365,31 @@
 
     <!-- start testimony -->
 
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <!-- start footer -->
+    <footer class="pt-12 px-4 mt-10 bg-zinc-800 text-gray-300">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-5 justify-items-center md:justify-start">
+        <h3 class="text-2xl font-extrabold"><a href="#">Furniture</a></h3>
+        <div class="footer_col">
+          <h4 class="text-lg font-bold mb-2">Links</h4>
+          <a class="footer_link" href="#home">Home</a>
+          <a class="footer_link" href="#about">About</a>
+          <a class="footer_link" href="#Products">Products</a>
+          <a class="footer_link" href="#Products">Testimony</a>
+        </div>
+        <div class="footer_col">
+          <h4 class="text-lg font-bold mb-2">Contact</h4>
+          <a class="footer_link" href="#">FQA</a>
+          <a class="footer_link" href="#">Blog</a>
+          <a class="footer_link" href="#contact">Contact</a>
+        </div>
+        <div class="footer_col">
+          <h4 class="text-lg font-bold mb-2">Social</h4>
+          <p>1800-233-233</p>
+          <p>Fernitures@mail.com</p>
+        </div>
+      </div>
+      <small class="block text-center pb-5 pt-8">&copy;2024 mohammed4elbalky@gmail.com</small>
+    </footer>
+    <!-- end footer -->
   </body>
 </html>
