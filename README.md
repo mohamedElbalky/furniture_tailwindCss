@@ -1,6 +1,6 @@
-# Frontend project created by TaillwindCss
+# Frontend project created by Tailwind Css
 
-
+https://github.com/mohamedElbalky/furniture_tailwindCss/assets/68825346/610a9e66-2787-49eb-95bb-fe68e68652ed
 
 ## Getting Started
 
